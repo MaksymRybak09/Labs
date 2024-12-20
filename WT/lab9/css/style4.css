@@ -1,0 +1,138 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+.wrapper {
+   padding: 10px 15px;
+}
+
+.list,
+.sub-list {
+   counter-reset: list;
+   padding-left: 20px;
+   margin-top: 15px;
+}
+
+.sub-list {
+   padding-left: 30px;
+}
+
+.list__item,
+.sub-list__item {
+   counter-increment: list;
+   margin-bottom: 15px;
+   font-family: 'Franklin Gothic Medium';
+   font-size: 18px;
+   letter-spacing: 0.007em;
+}
+
+.list__item::before,
+.sub-list__item::before {
+   margin: 0 4px;
+   padding: 3px 5px;
+   color: #ffdc18;
+   background-color: #27cd11;
+   border: 2px solid #ffdc18;
+}
+
+.list__item:nth-child(2):before,
+.sub-list__item:nth-child(2):before {
+   margin: 0 4px;
+   padding: 3px 5px;
+   color: #27cd11;
+   background-color: #ffdc18;
+   border: 2px solid #27cd11;
+}
+
+.list__item::before {
+   content: counter(list);
+}
+
+.sub-list__item::before {
+   content: counter(list, upper-roman);
+}

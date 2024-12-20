@@ -1,0 +1,64 @@
+form {
+   display: flex;
+   max-width: max-content;
+   flex-direction: column;
+   align-items: end;
+   padding: 10px;
+   background-color: #f8f8f8;
+   border: 1px solid #363636;
+}
+
+section {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   margin-bottom: 5px;
+}
+
+[type="text"],
+[type="password"] {
+   width: 150px;
+   background-color: #fff6b9;
+   border: 2px solid #ffe32a;
+}
+
+[type="password"] {
+   background-color: #ffb9fd;
+   border: 2px solid #ff2aea;
+}
+
+section span:last-child {
+   margin-right: 33px;
+}
+
+select {
+   width: 155px;
+   background-color: #b9d8ff;
+   border: 2px solid #2a63ff;
+}
+
+textarea {
+   width: 150px;
+   height: 100px;
+   background-color: #ceffb9;
+   border: 2px solid #5fff2a;
+}
+
+section div {
+   display: flex;
+   flex-direction: column;
+   margin-right: 33px;
+}
+
+button:first-child {
+   color: #fff;
+   background-color: #8aff37;
+   border: 0;
+}
+
+button:last-child {
+   margin-right: 40px;
+   color: #fff;
+   background-color: #ff3737;
+   border: 0;
+}

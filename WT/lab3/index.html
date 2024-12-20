@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <title>WTLab3</title>
+</head>
+<body>
+   <section class="task1">
+      <video src="video.mp4" width="450px" controls loop></video><br>
+      <audio src="audio.mp3" controls></audio><br>
+      <audio src="audio2.mp3" controls></audio><br>
+   </section>
+   <section class="task2">
+      <table>
+         <tr>
+            <td>
+               <h2>Form 1</h2>
+               <table>
+                  <tr>
+                     <td>
+                        Login:
+                        <input type="text">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Password:
+                        <input type="password">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Repeat password:
+                        <input type="password">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Sex:
+                        <input type="radio" name="sex">Male       
+                        <input type="radio" name="sex">Female       
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Country:
+                        <select>
+                           <option>Ukraine</option>
+                           <option>England</option>
+                           <option>USA</option>
+                        </select>        
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        About yourself:
+                        <textarea cols="25" rows="3"></textarea>        
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <button>Send</button>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+            <td>
+               <h2>Form 2</h2>
+               <table>
+                  <tr>
+                     <td>
+                        Login:
+                     </td>
+                     <td>
+                        <input type="text">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Password:
+                     </td>
+                     <td>
+                        <input type="password">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Repeat password:
+                     </td>
+                     <td>
+                        <input type="password">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Sex:
+                     </td>
+                     <td>
+                        <input type="radio" name="sex">Male
+                        <input type="radio" name="sex">Female       
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Country:
+                     </td>
+                     <td>
+                        <select>
+                           <option>Ukraine</option>
+                           <option>England</option>
+                           <option>USA</option>
+                        </select>        
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Your hobbies:     
+                     </td>
+                     <td>
+                        <input type="checkbox">Sport
+                        <input type="checkbox">Art
+                        <input type="checkbox">Music
+                     </td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td>
+                        <button>Clear</button>
+                        <button>Send</button>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </section>
+   <section class="task3">
+      <form>
+         <h2>Form</h2>
+         <fieldset>
+            <legend>Email & number</legend>
+            <label for="em">Email:</label>
+            <input id="em" type="email" placeholder="email" required pattern="\d{4,4}" autocomplete="off"><br>
+            <label for="num">Phone:</label>
+            <input id="num" type="number" placeholder="number" required><br>
+         </fieldset>
+         <fieldset>
+            <legend>Usefull info</legend>
+            <label for="point">Your point:</label><br>
+            0<input id="point" type="range" value="5" min="0" max="10">10<br>
+            <label for="bir">Your birthday:</label>
+            <input id="bir" type="date"><br>
+         </fieldset>
+         <fieldset>
+            <legend>Other</legend>
+            <textarea cols="30" rows="10" placeholder="text" spellcheck></textarea><br>
+            <input type="file" multiple><br>
+            <button>Send</button>
+         </fieldset>
+      </form>
+   </section>
+</body>
+</html>

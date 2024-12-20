@@ -1,0 +1,42 @@
+$transfer-amount-padding: 10px
+$error-color: #d9534f
+$input-border-color: #ced4da
+$input-focus-border-color: #80bdff
+$label-color: #333
+$label-font-weight: bold
+
+.transferAmountCounter
+  margin-bottom: 1rem
+
+  .label
+    color: $label-color
+    font-weight: $label-font-weight
+    margin-bottom: 0.5rem
+    display: block
+
+  .inputContainer
+    display: flex
+    flex-direction: column
+
+    .input
+      width: 100%
+      padding: $transfer-amount-padding
+      border: 1px solid $input-border-color
+      border-radius: 0.25rem
+      transition: border-color 0.3s
+
+      &:focus
+        outline: none
+        border-color: $input-focus-border-color
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+
+    .commissionInfo
+      margin-top: 0.5rem
+      display: flex
+      justify-content: space-between
+      font-size: 0.875rem
+
+  .error
+    color: $error-color
+    margin-top: 0.5rem
+    font-size: 0.875rem

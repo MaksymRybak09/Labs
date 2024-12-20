@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: outline-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: outline-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  outline: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  padding: 10px;
+}
+
+section {
+  margin-bottom: 15px;
+}
+
+p, input {
+  margin-bottom: 5px;
+}
+
+.more {
+  background-color: #37ff0a;
+}
+
+br {
+  margin-bottom: 5px;
+}
+
+.time {
+  width: 50px;
+}
+
+td {
+  padding: 5px;
+  border: 0.5px solid #000000;
+}
+
+.quantity {
+  width: 50px;
+}
+
+.add-product {
+  display: block;
+}
+
+.buy-product-btn {
+  display: block;
+}
+
+.unsold {
+  color: #fff;
+  background-color: #ff0000;
+}
+
+.sold {
+  color: #fff;
+  background-color: #00ff00;
+}
+
+.bill-list {
+  font-size: 22px;
+}

@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    padding: 20px 120px;
+}
+
+.header:before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 53px;
+    right: 65px;
+    background-image: url('../img/peopleIco.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.main {
+    padding: 0px 220px;
+    padding-top: 50px;
+}
+
+.container {
+    margin: 0px auto;
+}
+
+.main__section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.main__img {
+    width: 400px;
+    margin-bottom: 5px;
+    border-radius: 10%;
+}
+
+.main-img-text {
+    max-width: 400px;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    word-spacing: 3px;
+}
+
+.main__text {
+    max-width: 800px;
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 26px;
+    font-style: italic;
+    word-spacing: 3px;
+    letter-spacing: 0.007em;
+}
+
+.cows:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/left-quotes-sign.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cows:after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    background-image: url('../img/right-quotes-symbol.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right-text {
+    font-size: 22px;
+    text-align: right;
+    line-height: 26px;
+    font-style: italic;
+    word-spacing: 3px;
+    letter-spacing: 0.007em;
+}

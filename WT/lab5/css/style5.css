@@ -1,0 +1,20 @@
+.list {
+   display: flex;
+   gap: 15px;
+   list-style: none;
+}
+
+.list__link {
+   display: inline-block;
+   padding: 10px 15px;
+   color: #877160;
+   font-style: 22px;
+   text-decoration: none;
+   text-transform: capitalize;
+   border: 2px solid #B0C7D8;
+}
+
+.list__link:hover {
+   color: #fff;
+   background-color: #607788;
+}

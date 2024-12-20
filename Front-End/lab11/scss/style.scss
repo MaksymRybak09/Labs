@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+.photo-block {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    
+    img {
+        width: 100px;
+    }
+
+    button {
+        display: none;
+    }
+    
+    &:fullscreen {
+        align-items: start;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        
+        button {
+            display: inline-block;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+}

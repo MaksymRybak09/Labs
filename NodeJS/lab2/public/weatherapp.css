@@ -1,0 +1,12 @@
+aside, main {
+    padding-right: 100px;
+    display: inline-block; 
+}
+aside > ol {
+    list-style: none;
+}
+
+aside > li {
+    display: block;
+}
+

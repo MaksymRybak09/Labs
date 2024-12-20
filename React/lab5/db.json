@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Sample Task 1",
+      "description": "This is the description for the first task.",
+      "dueDate": "2024-12-01",
+      "isFavorite": true,
+      "isSaved": false
+    },
+    {
+      "id": "2",
+      "title": "Sample Task 2",
+      "description": "This is the description for the second task.",
+      "dueDate": "2024-12-02",
+      "isFavorite": false,
+      "isSaved": true
+    }
+  ]
+}

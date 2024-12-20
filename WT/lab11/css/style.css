@@ -1,0 +1,374 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.primary-massage {
+  border-color: #337ab7;
+}
+
+.success-massage {
+  border-color: #5cb85c;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+}
+
+.col-1 {
+  width: 8.33px;
+}
+
+.col-2 {
+  width: 16.66px;
+}
+
+.col-3 {
+  width: 25px;
+}
+
+.col-4 {
+  width: 33.32px;
+}
+
+.col-5 {
+  width: 41.65px;
+}
+
+.col-6 {
+  width: 50px;
+}
+
+.col-7 {
+  width: 58.31px;
+}
+
+.col-8 {
+  width: 66.64px;
+}
+
+.col-9 {
+  width: 75px;
+}
+
+.col-10 {
+  width: 83.3px;
+}
+
+.col-11 {
+  width: 91.63px;
+}
+
+.col-12 {
+  width: 100px;
+}
+
+.primary {
+  background-color: #fff;
+}
+
+.info {
+  background-color: #0000ff;
+}
+
+.success {
+  background-color: #00ff00;
+}
+
+.warning {
+  background-color: #fff000;
+}
+
+.danger {
+  background-color: #ff0000;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+  .col-1 {
+    width: 8.33px;
+  }
+  .col-2 {
+    width: 16.66px;
+  }
+  .col-3 {
+    width: 25px;
+  }
+  .col-4 {
+    width: 33.32px;
+  }
+  .col-5 {
+    width: 41.65px;
+  }
+  .col-6 {
+    width: 50px;
+  }
+  .col-7 {
+    width: 58.31px;
+  }
+  .col-8 {
+    width: 66.64px;
+  }
+  .col-9 {
+    width: 75px;
+  }
+  .col-10 {
+    width: 83.3px;
+  }
+  .col-11 {
+    width: 91.63px;
+  }
+  .col-12 {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  .col-1 {
+    width: 8.33px;
+  }
+  .col-2 {
+    width: 16.66px;
+  }
+  .col-3 {
+    width: 25px;
+  }
+  .col-4 {
+    width: 33.32px;
+  }
+  .col-5 {
+    width: 41.65px;
+  }
+  .col-6 {
+    width: 50px;
+  }
+  .col-7 {
+    width: 58.31px;
+  }
+  .col-8 {
+    width: 66.64px;
+  }
+  .col-9 {
+    width: 75px;
+  }
+  .col-10 {
+    width: 83.3px;
+  }
+  .col-11 {
+    width: 91.63px;
+  }
+  .col-12 {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+  .col-1 {
+    width: 8.33px;
+  }
+  .col-2 {
+    width: 16.66px;
+  }
+  .col-3 {
+    width: 25px;
+  }
+  .col-4 {
+    width: 33.32px;
+  }
+  .col-5 {
+    width: 41.65px;
+  }
+  .col-6 {
+    width: 50px;
+  }
+  .col-7 {
+    width: 58.31px;
+  }
+  .col-8 {
+    width: 66.64px;
+  }
+  .col-9 {
+    width: 75px;
+  }
+  .col-10 {
+    width: 83.3px;
+  }
+  .col-11 {
+    width: 91.63px;
+  }
+  .col-12 {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+  .col-1 {
+    width: 8.33px;
+  }
+  .col-2 {
+    width: 16.66px;
+  }
+  .col-3 {
+    width: 25px;
+  }
+  .col-4 {
+    width: 33.32px;
+  }
+  .col-5 {
+    width: 41.65px;
+  }
+  .col-6 {
+    width: 50px;
+  }
+  .col-7 {
+    width: 58.31px;
+  }
+  .col-8 {
+    width: 66.64px;
+  }
+  .col-9 {
+    width: 75px;
+  }
+  .col-10 {
+    width: 83.3px;
+  }
+  .col-11 {
+    width: 91.63px;
+  }
+  .col-12 {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+  .col-1 {
+    width: 8.33px;
+  }
+  .col-2 {
+    width: 16.66px;
+  }
+  .col-3 {
+    width: 25px;
+  }
+  .col-4 {
+    width: 33.32px;
+  }
+  .col-5 {
+    width: 41.65px;
+  }
+  .col-6 {
+    width: 50px;
+  }
+  .col-7 {
+    width: 58.31px;
+  }
+  .col-8 {
+    width: 66.64px;
+  }
+  .col-9 {
+    width: 75px;
+  }
+  .col-10 {
+    width: 83.3px;
+  }
+  .col-11 {
+    width: 91.63px;
+  }
+  .col-12 {
+    width: 100px;
+  }
+}

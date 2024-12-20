@@ -1,0 +1,140 @@
+* {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   border: 0;
+ }
+ 
+ *, *:before, *:after {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+ }
+ 
+ :focus, :active {
+   outline: none;
+ }
+ 
+ a:focus, a:active {
+   outline: none;
+ }
+ 
+ header, nav, aside, footer {
+   display: block;
+ }
+ 
+ html, body {
+   width: 100%;
+   height: 100%;
+   font-size: 100%;
+   font-size: 14px;
+   line-height: 1;
+ }
+ 
+ input, button, textarea {
+   font-family: inherit;
+ }
+ 
+ input::-ms-clear {
+   display: none;
+ }
+ 
+ button {
+   cursor: pointer;
+ }
+ 
+ button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+ }
+ 
+ a, a:hover, a:visited {
+   text-decoration: none;
+ }
+ 
+ ul, li {
+   list-style: none;
+ }
+ 
+ img {
+   vertical-align: top;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   font-size: inherit;
+   font-weight: 400;
+ }
+
+.footer {
+   width: 100vw;
+   height: 100vh;
+   padding: 100px 75px 40px 75px;
+   background-color: #8080ff;
+}
+
+.footer__body {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 200px;
+   border-bottom: 2px solid #fff;   
+}
+
+.section {
+   width: 200px;
+}
+
+.logo {
+   font-size: 36px;
+   font-weight: bold;
+   letter-spacing: 0.07rem;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.section__text {
+   font-size: 16px;
+   letter-spacing: 0.03rem;
+   line-height: 20px;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.section__peregraf {
+   font-size: 16px;
+   letter-spacing: 0.03rem;
+   line-height: 20px;
+   color: #fff;
+   margin-bottom: 30px;   
+}
+
+.footer__btn {
+   display: inline-block;
+   padding: 14px 22px;
+   margin-bottom: 10px;
+   font-size: 16px;
+   text-transform: uppercase;
+   border-radius: 30px;
+}
+
+.footer__main-btn {
+   width: 100%;
+   color: #fff;
+   border: 1px solid #fff;
+}
+
+.footer__sub-btn {
+   color: #000;
+   background-color: #fff;   
+}
+
+.footer__foot {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 50px;
+}
+
+.menu {
+   display: flex;
+   gap: 20px;
+   margin-bottom: 20px;
+}

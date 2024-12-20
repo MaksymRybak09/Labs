@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/weatherapp.css">
+</head>
+<body>
+    {{> header}}
+    <aside>
+        <ol>
+            <li><a class="geolocation-link" href="#">Current position</a></li>
+            <li><a href="http://localhost:3000/weather/Kyiv">Київ</a></li>
+            <li><a href="http://localhost:3000/weather/Zhytomyr">Житомир</a></li>
+            <li><a href="http://localhost:3000/weather/Poltava">Полтава</a></li>
+            <li><a href="http://localhost:3000/weather/Sumy">Суми</a></li>
+        </ol>
+    </aside>
+    <main>
+        <div>
+            Погода в місті: {{city}}
+            <img src="{{icon}}">
+        </div>
+        <div>Тиск: {{pressure}}</div>
+        <div>Вологість: {{humidity}}</div>
+        <div>Температура: {{temperature}}</div>
+    </main>
+    {{!-- <p>{{weath.desc}}</p> --}}
+    {{!-- {{> footer}} --}}
+    <script src="geolocation.js"></script>
+</body>
+</html>

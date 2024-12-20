@@ -1,0 +1,28 @@
+.list {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    background-color: #ffdc2b;
+}
+
+.list__item {
+    padding: 6px;   
+    background-color: aqua;
+    margin-bottom: 5px;
+}
+
+.list__item:nth-child(1) {
+    list-style-image: url('../img/iconfinder_apple_753485.png');
+}
+
+.list__item:nth-child(2) {
+    list-style-image: url('../img/iconfinder_fruit_kiwi_1898853.png');
+}
+
+.list__item:nth-child(3) {
+    list-style-image: url('../img/iconfinder_fruit_mango_1898851.png');
+}
+
+.list__item:nth-child(4) {
+    list-style-image: url('../img/iconfinder_fruit_pomegranate_1898844.png');
+}

@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: #edffff;
+}
+
+header > ol {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}

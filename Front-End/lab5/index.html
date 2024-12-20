@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <input class="country-checkbox" type="checkbox" value="English">English<br>
+        <input class="country-checkbox" type="checkbox" value="Ukraine">Ukraine<br>
+        <input class="country-checkbox" type="checkbox" value="Denmark">Denmark<br>
+        <div class="country-output">Countries: </div>
+        <button class="country-button">Select Countries</button>
+    </section>
+    <section>
+        <input type="checkbox" class="food-checkbox" value="Apple">Apple<br>
+        <input type="checkbox" class="food-checkbox" value="Bananna">Bananna<br>
+        <input type="checkbox" class="food-checkbox" value="Orange">Orange<br>
+        <div class="food-output">Food: </div>
+    </section>
+    <section>
+        <div class="math-progress-bar"></div>
+        <div class="math-task"></div>
+        <input type="radio" class="math-input" name="math"><span></span><br>
+        <input type="radio" class="math-input" name="math"><span></span><br>
+        <input type="radio" class="math-input" name="math"><span></span><br>
+        <input type="radio" class="math-input" name="math"><span></span><br>
+        <div class="math-result"></div>
+    </section>
+    <section>
+        <div class="math-two-progress-bar"></div>
+        <span class="math-two-task"></span>
+        <input type="text" class="math-two-input">
+        <button class="math-two-check-button">Check</button>
+        <div class="math-two-result"></div>
+    </section>
+    <section>
+        <div class="img-table">
+            <div class="img-item"><img src="img/avatar.png"></div>
+            <div class="img-item"><img src="img/avatar.png"></div>
+            <div class="img-item"><img src="img/avatar.png"></div>
+            <div class="img-item"><img src="img/avatar.png"></div>
+            <div class="img-item"><img src="img/avatar.png"></div>
+            <div class="img-item"><img src="img/avatar.png"></div>
+            <div class="img-item"><img src="img/avatar.png"></div>
+            <div class="img-item"><img src="img/avatar.png"></div>
+            <div class="img-item"><img src="img/avatar.png"></div>
+        </div>
+    </section>
+    <section>
+        <div class="input-block"><input type="text" class="input"></div>
+        <div class="input-block"><input type="text" class="input"></div>
+        <div class="input-block"><input type="text" class="input"></div>
+    </section>
+    <section>
+        <div class="constr-block">
+            <div class="constr-block__settings">
+                <div class="constr-block__section">
+                    Width:
+                    <span class="constr-block--width-ind">50</span>
+                    <br>
+                    0
+                    <input type="range" min="0" value="50" max="100" class="constr-block__input constr-block__input--width">
+                    100
+                </div>
+                <div class="constr-block__section">
+                    Height:
+                    <span class="constr-block--height-ind">50</span>
+                    <br>
+                    0
+                    <input type="range" min="0" value="50" max="100" class="constr-block__input constr-block__input-height">
+                    100
+                </div>
+                <div class="constr-block__section">
+                    Rotate:
+                    <span class="constr-block--rotate-ind"></span>
+                    <br>
+                    0
+                    <input type="range" min="0" value="0" max="360" class="constr-block__input constr-block__input--rotate">
+                    360
+                </div>
+            </div>
+            <div class="constr-block__body">
+                <div class="constr-block__rectangle"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <img class="img-normal-size" src="img/avatar.png">
+    </section>
+    <section>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Quantity</td>
+                <td>Order</td>
+            </tr>
+            <tr>
+                <td>Shirt</td>
+                <td class="shirt">0</td>
+                <td class="non-style">
+                    <button class="order-shirt">Order</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Pants</td>
+                <td class="pants">0</td>
+                <td class="non-style">
+                    <button class="order-pants">Order</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Shoes</td>
+                <td class="shoes">0</td>
+                <td class="non-style">
+                    <button class="order-shoes">Order</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <div class="wrapper">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="img/Earth.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="img/Moon.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="img/Mars.jpg" alt="Slide 3">
+                    </div>
+                </div>
+                <button id="prevBtn"><<</button>
+                <button id="nextBtn">>></button>
+            </div>
+        </div>
+    </section>
+    <script src="app/app.js"></script>
+</body>
+</html>

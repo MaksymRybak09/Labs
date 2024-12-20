@@ -1,0 +1,305 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+.fixed-btn,
+.header,
+.sidebar,
+.footer {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.fixed-btn {
+   position: fixed;
+   left: 10px;
+   bottom: 10px;
+   width: 50px;
+   height: 50px;
+   transition: all 0.5s;
+   background-color: #000;
+   border-radius: 100px;
+}
+
+.fixed-btn:hover {
+   width: 100px;
+   color: #fff;
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 150px 1fr 200px;
+   grid-row-gap: 10px;
+   padding: 10px;
+   background-color: #10b1e2;
+}
+
+.header {
+   font-size: 48px;
+   font-weight: bold;
+   text-shadow: 3px 3px 2px #ece02e, -3px -3px 2px #ff8c00;
+   color: #fff;
+   letter-spacing: 0.06px;
+   background-color: #1033e2;
+}
+
+.main {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.main__section-1 {
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: 2fr 2fr 1.5fr;
+   grid-template-rows: repeat(2, 300px);
+   grid-template-areas:
+      'img-1 img-2 sidebar'
+      'img-3 img-4 sidebar'
+   ;
+}
+
+.img-1 {
+   grid-area: img-1;
+   background-image: url('../img/Tree1.jpg');
+}
+
+.img-2 {
+   grid-area: img-2;
+   background-image: url('../img/Tree2.jpg');
+}
+
+.img-3 {
+   grid-area: img-3;
+   background-image: url('../img/Tree3.jpg');
+}
+
+.img-4 {
+   grid-area: img-4;
+   background-image: url('../img/Tree4.jpg');
+}
+
+.main__img {
+   transition: all 0.5s;
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+}
+
+.sidebar {
+   grid-area: sidebar;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: inset 14px 14px 24px #ece02e;
+}
+
+.sidebar__text {
+   font-size: 24px;
+   font-weight: bold;
+   color: #ece02e;
+   transform: rotate(90deg);
+}
+
+.main__section-2 {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 250px;
+   grid-gap: 10px;
+}
+
+.main__text {
+   padding: 10px;
+   overflow-y: scroll;
+   font-size: 24px;
+   line-height: 26px;
+   letter-spacing: 0.009em;
+   background-color: #fff;
+}
+
+.footer {
+   background-color: #1033e2;
+}
+
+.section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.title {
+   font-size: 24px;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.menu__list {
+   display: flex;
+   gap: 10px;
+   list-style: none;
+}
+
+.menu__item {
+   font-size: 18px;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.menu__item:hover {
+   text-decoration: underline;
+   color: #ff8c00;
+}
+
+.section__text {
+   margin-bottom: 8px;
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #fff;
+}
+
+.section__input {
+   font-size: 18px;
+   padding: 4px 6px;
+}
+
+.section__sub-text {
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+   .img-1:hover {
+      transform: translate(90px, 60px) scale(1.4);
+   }
+
+   .img-2:hover {
+      transform: translate(-90px, 60px) scale(1.4);
+   }
+
+   .img-3:hover {
+      transform: translate(90px, -60px) scale(1.4);
+   }
+
+   .img-4:hover {
+      transform: translate(-90px, -60px) scale(1.4);
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .fixed-btn {
+      display: none;
+   }
+
+   .main__section-1,
+   .main__section-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   .main__img {
+      min-width: 100%;
+      min-height: 500px;
+   }
+
+   .sidebar {
+      height: 100px;
+   }
+
+   .sidebar__text {
+      transform: rotate(0deg);
+   }
+
+   .main__text {
+      overflow: auto;
+   }
+}

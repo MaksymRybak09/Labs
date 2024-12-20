@@ -1,0 +1,107 @@
+* {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   border: 0;
+ }
+ 
+ *, *:before, *:after {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+ }
+ 
+ :focus, :active {
+   outline: none;
+ }
+ 
+ a:focus, a:active {
+   outline: none;
+ }
+ 
+ header, nav, aside, footer {
+   display: block;
+ }
+ 
+ html, body {
+   width: 100%;
+   height: 100%;
+   font-size: 100%;
+   font-size: 14px;
+   line-height: 1;
+ }
+ 
+ input, button, textarea {
+   font-family: inherit;
+ }
+ 
+ input::-ms-clear {
+   display: none;
+ }
+ 
+ button {
+   cursor: pointer;
+ }
+ 
+ button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+ }
+ 
+ a, a:hover, a:visited {
+   text-decoration: none;
+ }
+ 
+ ul, li {
+   list-style: none;
+ }
+ 
+ img {
+   vertical-align: top;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   font-size: inherit;
+   font-weight: 400;
+ }
+
+.main-img {
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+   background-image: url('../img/Space.png');
+   background-position: cover;
+}
+
+.sub-img1 {
+   display: inline-block;
+   width: 50vw;
+   height: 70vh;
+   background-image: url('../img/Earth.webp');
+   background-position: cover;
+   background-repeat: no-repeat;
+   background-size: 500px;
+}
+
+.sub-img2 {
+   display: inline-block;
+   width: 50vw;
+   height: 70vh;
+   position: absolute;
+   background-image: url('../img/Moon.png');
+   background-position: cover;
+   background-repeat: no-repeat;
+   background-size: 500px;
+}
+
+.sub-img3 {
+   display: inline-block;
+   width: 50vw;
+   height: 70vh;
+   position: absolute;
+   bottom: -150px;
+   background-image: url('../img/Mars.png');
+   background-position: cover;
+   background-repeat: no-repeat;
+   background-size: 500px;
+}

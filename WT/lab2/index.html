@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .first-list {
+            list-style: lower-alpha;
+        }
+        .second-list {
+            list-style: lower-greek;
+        }
+        .third-list {
+            list-style: square;
+        }
+        .sub-list-1 {
+            list-style: circle;
+        }
+        .sub-list-2 {
+            list-style: outside;
+        }
+        .none-list {
+            list-style: none;
+        }
+        table {
+            border: 1px solid grey;
+        }
+        td {
+            padding: 4px;
+            border: 1px solid grey;
+        }
+        thead {
+            background-color: khaki;
+        }
+        tbody {
+            background-color: lightblue;
+        }
+        tfoot {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <section class="task1">
+        <p>Квіти:</p>
+        <ul>
+            <li>Троянди</li>
+            <li>Гвоздики</li>
+            <li>Тюльпани</li>
+            <li>Ромашки</li>
+        </ul>
+        <ol>
+            <li>
+                <p>Фрукти:</p>
+                <ul class="first-list">
+                    <li>Ананас</li>
+                    <li>Апельсин</li>
+                    <li>Ківі</li>
+                </ul>
+            </li>
+            <li>
+                <p>Овочі:</p>
+                <ul class="second-list">
+                    <li>Капуста</li>
+                    <li>Морква</li>
+                    <li>Буряк</li>
+                </ul>
+            </li>
+            <li>
+                <p>Ягоди:</p>
+                <ul class="third-list">
+                    <li>Смородина</li>
+                    <li>Клубніка</li>
+                    <li>Черешня</li>
+                </ul>
+            </li>
+        </ol>
+        <ol>
+            <li>
+                <p>Підпри\мство 1</p>
+                <ul class="sub-list-1">
+                    <li>
+                        <p>Керівник 1</p>
+                        <ol type="i">
+                            <li>Робітник 1</li>
+                            <li>Робітник 2</li>
+                            <li>Робітник 3</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Керівник 2</p>
+                        <ul type="circle">
+                            <li>Робітник 1</li>
+                            <li>Робітник 2</li>
+                            <li>Робітник 3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Керівник 3</p>
+                        <ol type="lower-alpha">
+                            <li>Робітник 1</li>
+                            <li>Робітник 2</li>
+                            <li>Робітник 3</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Підпри\мство 2</p>
+                <ul class="sub-list-2">
+                    <li>
+                        <p>Керівник 1</p>
+                        <ol type="A">
+                            <li>Робітник 1</li>
+                            <li>Робітник 2</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Керівник 2</p>
+                        <ul type="outside">
+                            <li>Робітник 1</li>
+                            <li>Робітник 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <ol start="8" type="I">
+            <li>Король Фердинанд</li>
+            <li>Корроль Артем</li>
+            <li>Король Василь</li>
+            <li>Король Андрій</li>
+        </ol>
+        <ol class="none-list">
+            <li>
+                <p>Список - це</p>
+                <p>Впорядкований набір елементів</p>
+            </li>
+            <li>
+                <p>Ненумерований список - це</p>
+                <p>Список усі елементи якого перераховуються одним і тим же знаком</p>
+            </li>
+            <li>
+                <p>Нумерований список - це</p>
+                <p>Спсок в якому кожний елемент має свій номер</p>
+            </li>
+        </ol>
+    </section>
+    <section class="task2">
+        <table>
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>PIB</td>
+                    <td>Adress</td>
+                    <td>Telephone</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>PIB1</td>
+                    <td>Adress1</td>
+                    <td>1111</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>PIB2</td>
+                    <td>Adress2</td>
+                    <td>2222</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>PIB3</td>
+                    <td>Adress3</td>
+                    <td>3333</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>PIB4</td>
+                    <td>Adress4</td>
+                    <td>4444</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">All</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <td rowspan="2">#</td>
+                    <td colspan="3">Tags</td>
+                </tr>
+                <tr>
+                    <td>Tag</td>
+                    <td colspan="2">Meaning</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>p</td>
+                    <td rowspan="4">Text</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>a</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>i</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>b</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>table</td>
+                    <td>Table</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>tr</td>
+                    <td>Row table</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>th</td>
+                    <td rowspan="2">Element table</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>td</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td colspan="2" rowspan="3">1</td>
+                <td colspan="2">2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="3">4</td>
+            </tr>
+            <tr>
+                <td rowspan="4">5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td rowspan="2">8</td>
+                <td rowspan="3">9</td>
+            </tr>
+            <tr>
+                <td rowspan="3" colspan="2">10</td>
+            </tr>
+            <tr>
+                <td>11</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td colspan="3" rowspan="5">
+                    1
+                    <img src="pic.webp" width="45px">
+                </td>
+                <td colspan="2" rowspan="3">
+                    2
+                    <img src="pic2.jpg" width="45px">
+                </td>
+                <td colspan="2" rowspan="3">
+                    3
+                    <img src="pic3.jpg" width="45px">
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="4">4</td>
+            </tr>
+            <tr>
+                <td rowspan="3">5</td>
+                <td>6</td>
+                <td colspan="2">7</td>
+            </tr>
+            <tr>
+                <td colspan="2">8</td>
+                <td rowspan="2">9</td>
+                <td colspan="3" rowspan="2">10</td>
+            </tr>
+            <tr>
+                <td colspan="2">11</td>
+            </tr>
+        </table>
+    </section>
+    <section class="task3">
+        <img src="uk.jpg" usemap="#image-map">
+        <map name="image-map">
+            <area href="https://uk.wikipedia.org/wiki/%D0%A3%D0%B6%D0%B3%D0%BE%D1%80%D0%BE%D0%B4" coords="51,313,33,373,129,415,166,390" shape="poly">
+            <area href="https://uk.wikipedia.org/wiki/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C" coords="110,329,60,288,156,168,233,221" shape="poly">
+            <area href="https://uk.wikipedia.org/wiki/%D0%9B%D1%83%D1%86%D1%8C%D0%BA" coords="161,150,224,196,277,109,204,32" shape="poly">
+            <area href="https://uk.wikipedia.org/wiki/%D0%A0%D1%96%D0%B2%D0%BD%D0%B5" coords="233,192,276,210,385,95,276,54" shape="poly">
+            <area href="https://uk.wikipedia.org/wiki/%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C" coords="184,274,124,328,198,410,246,353" shape="poly">
+            <area href="https://uk.wikipedia.org/wiki/%D0%96%D0%B8%D1%82%D0%BE%D0%BC%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B0_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C" coords="412,95,359,186,473,265,491,174" shape="poly">
+            <area href="https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%BD%D0%B8%D1%86%D1%8F" coords="512,393,375,385,391,268,492,285" shape="poly">
+            <area href="https://uk.wikipedia.org/wiki/%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%B0_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C" coords="295,214,370,206,359,366,279,366" shape="poly">
+            <area href="https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B0_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C" coords="240,223,286,212,271,352,195,269" shape="poly">
+        </map>
+    </section>
+    <section class="task4">
+        <h1 id="menu">Види спорту</h1>
+        <p>Види різних видів спорту:</p>
+        <ol>
+            <li>Футбол</li>
+            <li>Баскетбол</li>
+            <li>Волейбол</li>
+            <li>Теніс</li>
+        </ol>
+        <a href="#foot"><img width="400px" src="football.jpg"></a>
+        <br><a href="#menu">menu</a><br>
+        <a href="#bask"><img width="400px" src="basketball.webp"></a>
+        <br><a href="#menu">menu</a><br>
+        <a href="#voley"><img width="400px" src="voleyball.jpg"></a>
+        <br><a href="#menu">menu</a><br>
+        <a href="#ten"><img width="400px" src="tenis.jpg"></a>
+        <br><a href="#menu">menu</a><br>
+        <h2>Описи:</h2>
+        <ol>
+            <li id="foot">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur officiis eaque quasi? Cum in esse ratione amet temporibus incidunt sequi dolores, at asperiores, porro iusto reiciendis! Itaque nisi similique iste?
+            </li>
+            <li id="bask">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, rem non reiciendis ullam voluptate nulla atque repellendus dicta debitis vero eaque deserunt laboriosam, unde illo facere temporibus quasi fugiat itaque.
+            </li>
+            <li id="voley">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi fugit vitae similique sit provident adipisci doloremque dolorem. Unde, aperiam delectus architecto accusamus deleniti labore. Temporibus placeat ipsa ex ipsum? Aperiam?
+            </li>
+            <li id="ten">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sequi ducimus, in porro voluptatibus architecto temporibus libero aspernatur voluptate quidem, tempora debitis, quis fuga eveniet esse delectus laudantium optio iste!
+            </li>
+            <li>
+                <a href="#menu">menu</a>
+            </li>
+        </ol>
+    </section>
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+$primary-color: #337ab7;
+$success-color: #5cb85c;
+
+.primary-massage {
+   border-color: $primary-color;
+}
+
+.success-massage {
+   border-color: $success-color;
+}
+
+$width: 150px;
+$height: $width;
+
+.img {
+   width: $width;
+   height: $height;
+}
+
+$name: col !default;
+
+@function calcWidth($width, $index) {
+   $res: round($width * $index);
+   @if $res == 25px or $res == 50px or $res == 75px or $res == 100px {
+      @return round($width * $index);
+   }
+   @else {
+      @return $width * $index;
+   }
+}
+
+@for $i from 1 through 12 {
+   .#{$name}-#{$i} {
+      width: calcWidth(8.33px, $i);
+   }
+}
+
+$classes: primary info success warning danger;
+$colors: #fff, #0000ff, #00ff00, #fff000, #ff0000;
+
+@for $i from 1 through 5 {
+   .#{nth($classes, $i)} {
+      background-color: nth($colors, $i);
+   }
+}
+
+$widthes: 576px 768px 992px 1200px 1400px;
+$container-widthes: 540px 720px 960px 1140px 1320px;
+$class-suffixes: -sm -md -lg -xl -xxl;
+
+@for $i from 1 through 5 {
+   @media screen and (min-width: nth($widthes, $i)) {
+      .container {
+         width: nth($container-widthes, $i);
+      }
+      @for $i from 1 through 12 {
+         .#{$name}-#{$i} {
+            width: calcWidth(8.33px, $i);
+         }
+      }     
+   }
+}

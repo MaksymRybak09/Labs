@@ -1,0 +1,166 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+   background: linear-gradient(155.74deg, #FFFFFF 19.56%, #bab1b1f0 109.29%);
+}
+
+.card {
+   width: 235px;
+   padding: 10px;
+   padding-top: 20px;
+   position: relative;
+   transition: all 0.5s;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 3px 3px 18px #a9a9a9;
+}
+
+.card:hover {
+   transform: scale(1.5);
+}
+
+.card__icon {
+   width: 28px;
+   position: absolute;
+}
+
+.card__icon:nth-child(1) {
+   top: 5px;
+   left: 10px;
+}
+
+.card__icon:nth-child(2) {
+   top: 5px;
+   right: 10px;
+}
+
+.card__header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.card__img {
+   width: 120px;
+   margin-bottom: 10px;
+   border-radius: 100px;
+}
+
+.title {
+   text-align: center;
+   font-family: 'Vollkorn';
+   font-size: 24px;
+   font-weight: bold;
+   letter-spacing: 0.007em;
+   word-spacing: 2px;
+}
+
+.card__body {
+   padding-top: 20px;
+}
+
+.card-body-section {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   margin-bottom: 8px;
+   border-bottom: 1px dashed #a9a9a9;
+}
+
+.text {
+   font-family: 'Vollkorn';
+   font-size: 18px;
+   letter-spacing: 0.04em;
+}

@@ -1,0 +1,37 @@
+p {
+    color: red;
+    text-align: center;
+}
+
+.text {
+    color: green;
+}
+
+#purple-text {
+    color: purple;
+}
+
+a {
+    color: black;
+}
+
+.menu__item {
+    color: green;
+}
+
+.sub-menu {
+    list-style-type: none;
+}
+
+#last-list {
+    list-style-type: square;
+}
+
+#last-list a {
+    text-decoration: none;
+}
+
+.sub-menu__link {
+    color: purple;
+}
+
